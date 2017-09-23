@@ -14,18 +14,18 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="search.html">Поиск по сайту</a>
+              <a class="site-list__link" href="search.html">Поиск по сайту</a>
             </li>
             <li class="user-list__item">
-              <a href="cart.html">Корзина: пока пуста</a>
+              <a class="site-list__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -33,32 +33,32 @@
     </header>
     <main class="page-main">
       <section class="products">
-        <h1 class="products-title">Милые штуки ручной работы для дома</h1>
-        <ul class="products-list">
-          <li class="products-list__item">
-            <a class="products-list__link products-list__link--interior" href="interior.html">Предметы интерьера</a>
+        <h1 class="products__title">Милые штуки ручной работы для дома</h1>
+        <ul class="products__list">
+          <li class="products__item">
+            <a class="products__link products__link--interior" href="interior.html">Предметы интерьера</a>
           </li>
-          <li class="products-list__item">
-            <a class="products-list__link products-list__link--toys" href="toys.html">Детские игрушки</a>
+          <li class="products__item">
+            <a class="products__link products__link--toys" href="toys.html">Детские игрушки</a>
           </li>
         </ul>
       </section>
       <section class="promo">
-        <h2 class="visually-hidden">Популярный товар на этой неделе</h2>
+        <h2 class="promo__title visually-hidden">Популярный товар на этой неделе</h2>
         <article class="product">
           <h2 class="product__title">Вязаные корзинки</h2>
           <span>Товар недели</span>
           <p class="product__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="product__parameters">
-            <tr class="product__parameters-row">
+            <tr class="product__row">
               <td>Цвет:</td>
               <td>«Тиффани»/серый</td>
             </tr>
-            <tr class="product__parameters-row">
+            <tr class="product__row">
               <td>Диаметр:</td>
               <td>25 см</td>
             </tr>
-            <tr class="product__parameters-row">
+            <tr class="product__row">
               <td>Высота:</td>
               <td>15 см</td>
             </tr>
@@ -88,8 +88,8 @@
             <blockquote class="reviews__item slider__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
-                <span class="author__name">Анастасия Красильникова</span>
-                <span class="author__nick">@misssssiskras</span>
+                <span class="reviews__name">Анастасия Красильникова</span>
+                <span class="reviews__nick">@misssssiskras</span>
               </cite>
             </blockquote>
           </div>
@@ -103,45 +103,55 @@
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <p class="contacts__info">
-          <span class="contacts__info-key">e-mail:</span>
-          <span class="contacts__info-value"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+          <span class="contacts__key">e-mail:</span>
+          <span class="contacts__value"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
         </p>
         <p class="contacts__info">
-          <span class="contacts__info-key">адрес:</span>
-          <span class="contacts__info-value">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</span>
+          <span class="contacts__key">адрес:</span>
+          <span class="contacts__value">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</span>
         </p>
-        <div class="contacts__map">
-          <img src="img/map-mobile.jpg" width="320" height="457" alt="Адрес компании по адресу ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
+        <div class="contacts__map map">
+          <img class="map__img" src="img/map-mobile.jpg" width="320" height="457" alt="Адрес компании по адресу ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
         </div>
-        <a href="write-us.html" class="btn contacts__btn">Напишите нам</a>
+        <a class="btn contacts__btn" href="write-us.html">Напишите нам</a>
       </section>
-      <footer class="page-footer">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="https://wwww.instagram.com" target="_blank">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com" target="_blank">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--tw" href="https://twitter.com" target="_blank">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <span class="visually-hidden">HTML Academy</span>
-          </a>
-        </div>
-      </footer>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="https://wwww.instagram.com" target="_blank">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://www.facebook.com" target="_blank">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="https://twitter.com" target="_blank">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </footer>
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <span class="modal__descr">Выберите размер:</span>
+      <ul class="modal__list sizes-list">
+        <li class="sizes-list__item sizes-list__item--active">s</li>
+        <li class="sizes-list__item">m</li>
+        <li class="sizes-list__item">l</li>
+      </ul>
+      <a class="btn modal__btn" href="#">Добавить</a>
+    </section>
   </body>
 </html>
