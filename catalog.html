@@ -120,15 +120,26 @@
         </a>
       </div>
     </footer>
-    <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <span class="modal__descr">Выберите размер:</span>
-      <ul class="modal__list sizes-list">
-        <li class="sizes-list__item sizes-list__item--active">s</li>
-        <li class="sizes-list__item">m</li>
-        <li class="sizes-list__item">l</li>
-      </ul>
-      <a class="btn modal__btn" href="#">Добавить</a>
+    <section class="add-to-cart">
+      <h2 class="add-to-cart__title">Добавить в корзину</h2>
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" metohod="get">
+        <div class="add-to-cart__form-title">Выберите размер:</div>
+        <div class="add-to-cart__field-wrapper">
+          <label class="add-to-cart__radio-wrapper">
+            <input type="radio" name="add-to-cart" value="s">
+            <span class="add-to-cart__radio-text">s</span>
+          </label>
+          <label class="add-to-cart__radio-wrapper">
+            <input type="radio" name="add-to-cart" value="m">
+            <span class="add-to-cart__radio-text">m</span>
+          </label>
+          <label class="add-to-cart__radio-wrapper">
+            <input type="radio" name="add-to-cart" value="l">
+            <span class="add-to-cart__radio-text">l</span>
+          </label>
+        </div>
+        <input class="btn add-to-cart__btn" type="submit" value="Добавить">
+      </form>
     </section>
   </body>
 </html>
