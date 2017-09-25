@@ -22,10 +22,10 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a class="site-list__link" href="search.html">Поиск по сайту</a>
+              <a class="user-list__link" href="search.html">Поиск по сайту</a>
             </li>
             <li class="user-list__item">
-              <a class="site-list__link" href="cart.html">Корзина: пока пуста</a>
+              <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -47,20 +47,20 @@
         <h2 class="promo__title visually-hidden">Популярный товар на этой неделе</h2>
         <article class="product">
           <h2 class="product__title">Вязаные корзинки</h2>
-          <span>Товар недели</span>
+          <span class="product__marker">Товар недели</span>
           <p class="product__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="product__parameters">
-            <tr class="product__row">
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
+          <table class="product__table">
+            <tr>
+              <td class="product__table-parameter">Цвет:</td>
+              <td class="product__table-value">«Тиффани»/серый</td>
             </tr>
-            <tr class="product__row">
-              <td>Диаметр:</td>
-              <td>25 см</td>
+            <tr>
+              <td class="product__table-parameter">Диаметр:</td>
+              <td class="product__table-value">25 см</td>
             </tr>
-            <tr class="product__row">
-              <td>Высота:</td>
-              <td>15 см</td>
+            <tr>
+              <td class="product__table-parameter">Высота:</td>
+              <td class="product__table-value">15 см</td>
             </tr>
           </table>
           <div class="product__img-wrapper">
@@ -88,28 +88,30 @@
             <blockquote class="reviews__item slider__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
-                <span class="reviews__name">Анастасия Красильникова</span>
-                <span class="reviews__nick">@misssssiskras</span>
+                <span class="reviews__author-name">Анастасия Красильникова</span>
+                <span class="reviews__author-nick">@misssssiskras</span>
               </cite>
             </blockquote>
           </div>
-          <div class="reviews__toggles slider__toggles">
-            <button class="reviews__toggle reviews__toggle--prev slider__toggle" type="button">Предыдущий отзыв</button>
-            <button class="reviews__toggle reviews__toggle--next slider__toggle" type="button">Следующий отзыв</button>
+          <div class="slider__toggles">
+            <button class="slider__arrow slider__arrow--prev" type="button">Предыдущий отзыв</button>
+            <button class="slider__arrow slider__arrow--next" type="button">Следующий отзыв</button>
           </div>
           <a class="btn reviews__btn" href="write-review.html">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__info">
-          <span class="contacts__key">e-mail:</span>
-          <span class="contacts__value"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
-        </p>
-        <p class="contacts__info">
-          <span class="contacts__key">адрес:</span>
-          <span class="contacts__value">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</span>
-        </p>
+        <table class="contacts__table">
+          <tr>
+            <td class="contacts__table-parameter">e-mail:</td>
+            <td class="contacts__table-value"><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+          </tr>
+          <tr>
+            <td class="contacts__table-parameter">адрес:</td>
+            <td class="cantacts__table-value">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</td>
+          </tr>
+        </table>
         <div class="contacts__map map">
           <img class="map__img" src="img/map-mobile.jpg" width="320" height="457" alt="Адрес компании по адресу ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
         </div>
@@ -145,7 +147,7 @@
     </footer>
     <section class="add-to-cart">
       <h2 class="add-to-cart__title">Добавить в корзину</h2>
-      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" metohod="get">
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
         <div class="add-to-cart__form-title">Выберите размер:</div>
         <div class="add-to-cart__field-wrapper">
           <label class="add-to-cart__radio-wrapper">
