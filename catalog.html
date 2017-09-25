@@ -22,10 +22,10 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a class="site-list__link" href="search.html">Поиск по сайту</a>
+              <a class="user-list__link" href="search.html">Поиск по сайту</a>
             </li>
             <li class="user-list__item">
-              <a class="site-list__link" href="cart.html">Корзина: пока пуста</a>
+              <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -40,7 +40,7 @@
           <li class="catalog__item">
             <article class="product-card">
               <div class="product-card__descr">
-                <h3 class="product-card__title"><a class="product-card__link" href="bunny-bouncer.html">Зайчик-попрыгайчик</a></h3>
+                <a class="product-card__title" href="bunny-bouncer.html">Зайчик-попрыгайчик</a>
                 <span class="product-card__parameters">Рост 30 см, вес 200 г</span>
                 <div class="product-card__buy">
                   <span class="product-card__price">1 200 руб.</span>
@@ -55,7 +55,7 @@
           <li class="catalog__item">
             <article class="product-card">
               <div class="product-card__descr">
-                <h3 class="product-card__title"><a class="product-card__link" href="basket.html">Корзинка для белья</a></h3>
+                <a class="product-card__title" href="basket.html">Корзинка для белья</a>
                 <span class="product-card__parameters">Диаметр 15 см, высота 10 см</span>
                 <div class="product-card__buy">
                   <span class="product-card__price">690 руб.</span>
@@ -70,7 +70,7 @@
           <li class="catalog__item">
             <article class="product-card">
               <div class="product-card__descr">
-                <h3 class="product-card__title"><a class="product-card__link" href="big-basket.html">Большая корзинка для игрушек</a></h3>
+                <a class="product-card__link" href="big-basket.html">Большая корзинка для игрушек</a>
                 <span class="product-card__parameters">Диаметр 30 см, высота 30 см</span>
                 <div class="product-card__buy">
                   <span class="product-card__price">1 500 руб.</span>
@@ -85,12 +85,17 @@
         </ul>
       </section>
       <section class="production">
-        <h2 class="production__title">Процесс производства</h2>
-        <div class="video">
-          <img class="video__img" src="img/catalog/video.jpg" width="260" height="150" alt="Процесс производства">
+        <div class="production__wrapper">
+          <h2 class="production__title">Процесс производства</h2>
+          <div class="production__video">
+            <video class="video" src="#" poster="img/catalog/video.jpg" preload="none" width="260" height="150"></video>
+            <div class="video__controls">
+              <button class="video__toggle" type="button"></button>
+            </div>
+          </div>
+          <p class="production__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="btn production__order-btn" href="form.html">Сделать заказ</a>
         </div>
-        <p class="production__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="btn" href="form.html">Сделать заказ</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -122,7 +127,7 @@
     </footer>
     <section class="add-to-cart">
       <h2 class="add-to-cart__title">Добавить в корзину</h2>
-      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" metohod="get">
+      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
         <div class="add-to-cart__form-title">Выберите размер:</div>
         <div class="add-to-cart__field-wrapper">
           <label class="add-to-cart__radio-wrapper">
