@@ -12,7 +12,8 @@
   border: 2px solid $gray-dark;
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $gray-dark;
     color: rgba(255, 255, 255, 1);
   }

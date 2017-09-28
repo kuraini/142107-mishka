@@ -26,9 +26,11 @@
   margin-right: 7px;
   border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;
+
   &:nth-child(3n) {
     margin-right: 0;
   }
+
   &:hover {
     border-color: rgba(68, 68, 68, 0.3);
   }
@@ -36,6 +38,7 @@
 
 .add-to-cart__radio-wrapper--active {
   border-color: $green-light;
+
   &:hover {
     border-color: $green-light;
   }
@@ -54,6 +57,7 @@
   color: rgba(255, 255, 255, 1);
   background-color: $green-light;
   border-color: $green-light;
+
   &:hover {
     background-color: rgba(255, 255, 255, 1);
     color: $green-light;

@@ -1,4 +1,4 @@
-.reviews{
+.reviews {
   padding-top: 31px;
   padding-bottom: 51px;
 }
@@ -35,7 +35,7 @@
 }
 
 .slider__toggles {
-  margin-bottom: 38px
+  margin-bottom: 38px;
 }
 
 .slider__arrow {
@@ -46,6 +46,7 @@
   background: #ffffff;
   border: 1px solid $gray-medium;
   cursor: pointer;
+
   &::before {
     content: "";
     display: block;
@@ -70,13 +71,13 @@
 }
 
 .slider__arrow--prev {
-  &::before{
-    background-image: url(../img/icon-left-arrow.svg);
+  &::before {
+    background-image: url("../img/icon-left-arrow.svg");
   }
 }
 
 .slider__arrow--next {
-  &::before{
-    background-image: url(../img/icon-right-arrow.svg);
+  &::before {
+    background-image: url("../img/icon-right-arrow.svg");
   }
 }

@@ -8,9 +8,11 @@
 
 .product-card__title {
   display: block;
+
   @include font-link;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
