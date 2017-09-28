@@ -1,0 +1,26 @@
+@mixin divider {
+  border-bottom: 1px solid #ececec;
+}
+
+@mixin title {
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+@mixin font-link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,56 @@
+.form {
+  margin-bottom: 55px;
+}
+
+.form__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.field-radio,
+.field-checkbox,
+.field-username,
+.field-phone,
+.field-mail,
+.field-message {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.field-radio__title,
+.field-checkbox__title,
+.field-username__title,
+.field-phone__title,
+.field-mail__title,
+.field-message__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: $green-light;
+  text-transform: uppercase;
+}
+
+.field-radio__wrapper,
+.field-checkbox__wrapper,
+.field-username__label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.form__required-message {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 31px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__btn {
+  width: 260px;
+}

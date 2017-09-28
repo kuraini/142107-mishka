@@ -1,0 +1,23 @@
+.btn {
+  display: block;
+  max-width: 260px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $gray-dark;
+  background-color: #ffffff;
+  border: 2px solid $gray-dark;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: $gray-dark;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    color: grba(255, 255, 255, 0.3);
+  }
+}
