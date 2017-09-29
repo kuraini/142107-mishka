@@ -49,17 +49,8 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 17px;
-  color: #444444;
 }
 
 .add-to-cart__btn {
   width: 260px;
-  color: rgba(255, 255, 255, 1);
-  background-color: $green-light;
-  border-color: $green-light;
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 1);
-    color: $green-light;
-  }
 }
