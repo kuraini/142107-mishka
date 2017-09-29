@@ -1,0 +1,36 @@
+.product-card {
+  width: 260px;
+}
+
+.product-card__descr {
+  padding: 0 28px;
+}
+
+.product-card__title {
+  display: block;
+
+  @include font-link;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__parameters {
+  font-size: 13px;
+}
+
+.product-card__price {
+  @include font-link;
+}
+
+.product-card__link {
+  display: block;
+  width: 260px;
+  height: 195px;
+}

@@ -1,0 +1,22 @@
+.advantages {
+  padding-top: 34px;
+}
+
+.advantages__title {
+  @include title;
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  @include list-reset;
+  margin-bottom: 30px;
+}
+
+.advantages__item {
+  padding-top: 86px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+}

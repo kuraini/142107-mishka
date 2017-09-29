@@ -1,0 +1,33 @@
+.page-footer {
+  background-color: $gray-light;
+}
+
+.page-footer__social {
+  min-height: 80px;
+}
+
+.social__list {
+  @include list-reset;
+}
+
+.social__link {
+  display: block;
+}
+
+.page-footer__copyright {
+  display: block;
+  min-height: 80px;
+  padding-top: 23px;
+  padding-right: 57px;
+  padding-bottom: 23px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 1);
+  border-top: 1px solid $gray-medium;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

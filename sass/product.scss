@@ -1,0 +1,61 @@
+.product-week {
+  padding-top: 34px;
+}
+
+.product__title-wrapper {
+  margin-bottom: 30px;
+}
+
+.product__title {
+  @include title;
+}
+
+.product__marker {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $green-light;
+}
+
+.product__descr {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.product__table {
+  width: 100%;
+  margin-bottom: 28px;
+  line-height: 20px;
+}
+
+.product__table-parameter,
+.product__table-value {
+  padding-top: 14px;
+  padding-bottom: 15px;
+
+  @include divider;
+}
+
+.product__table-parameter {
+  width: 98px;
+}
+
+.product__img-wrapper {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 29px;
+}
+
+.product__price {
+  display: block;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.product__btn {
+  margin-bottom: 42px;
+}

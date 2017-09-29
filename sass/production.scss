@@ -1,0 +1,31 @@
+.production {
+  padding-bottom: 58px;
+}
+
+.production__wrapper {
+  padding-top: 29px;
+  padding-bottom: 33px;
+}
+
+.production__title {
+  margin: 0;
+  margin-right: 34px;
+  margin-left: 34px;
+  margin-bottom: 26px;
+
+  @include font-link;
+}
+
+.production__video {
+  margin-bottom: 34px;
+}
+
+.production__descr {
+  padding: 0 34px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production__order-btn {
+  margin: 0 34px;
+}

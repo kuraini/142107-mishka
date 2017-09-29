@@ -3,103 +3,111 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="logo page-header__logo" href="index.html">
-        <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link" href="search.html">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__container">
+        <a class="logo page-header__logo" href="index.html">
+          <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="search.html">Поиск по сайту</a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
         <h1 class="page-main__title">Каталог товаров</h1>
       </div>
       <section class="catalog">
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <article class="product-card">
-              <div class="product-card__descr">
-                <a class="product-card__title" href="bunny-bouncer.html">Зайчик-попрыгайчик</a>
-                <span class="product-card__parameters">Рост 30 см, вес 200 г</span>
-                <div class="product-card__buy">
-                  <span class="product-card__price">1 200 руб.</span>
-                  <a class="product-card__btn" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+        <div class="container">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <article class="product-card">
+                <div class="product-card__descr">
+                  <a class="product-card__title" href="bunny-bouncer.html">Зайчик-попрыгайчик</a>
+                  <span class="product-card__parameters">Рост 30 см, вес 200 г</span>
+                  <div class="product-card__buy">
+                    <span class="product-card__price">1 200 руб.</span>
+                    <a class="product-card__btn" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+                  </div>
                 </div>
-              </div>
-              <div class="product-card__wrapper">
-                <a class="product-card__link" href="bunny-bouncer.html"><img class="product-card__img" src="img/catalog/photo-1-mobile.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="product-card">
-              <div class="product-card__descr">
-                <a class="product-card__title" href="basket.html">Корзинка для белья</a>
-                <span class="product-card__parameters">Диаметр 15 см, высота 10 см</span>
-                <div class="product-card__buy">
-                  <span class="product-card__price">690 руб.</span>
-                  <a class="product-card__btn" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+                <div class="product-card__wrapper">
+                  <a class="product-card__link" href="bunny-bouncer.html"><img class="product-card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
                 </div>
-              </div>
-              <div class="product-card__wrapper">
-                <a class="product-card__link" href="basket.html"><img class="product-card__img" src="img/catalog/photo-2-mobile.jpg" width="260" height="195" alt="Корзина для белья"></a>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="product-card">
-              <div class="product-card__descr">
-                <a class="product-card__link" href="big-basket.html">Большая корзинка для игрушек</a>
-                <span class="product-card__parameters">Диаметр 30 см, высота 30 см</span>
-                <div class="product-card__buy">
-                  <span class="product-card__price">1 500 руб.</span>
-                  <a class="product-card__btn" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product-card">
+                <div class="product-card__descr">
+                  <a class="product-card__title" href="basket.html">Корзинка для белья</a>
+                  <span class="product-card__parameters">Диаметр 15 см, высота 10 см</span>
+                  <div class="product-card__buy">
+                    <span class="product-card__price">690 руб.</span>
+                    <a class="product-card__btn" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+                  </div>
                 </div>
-              </div>
-              <div class="product-card__wrapper">
-                <a class="product-card__link" href="big-basket.html"><img class="product-card__img" src="img/catalog/photo-3-mobile.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
-              </div>
-            </article>
-          </li>
-        </ul>
+                <div class="product-card__wrapper">
+                  <a class="product-card__link" href="basket.html"><img class="product-card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья"></a>
+                </div>
+              </article>
+            </li>
+            <li class="catalog__item">
+              <article class="product-card">
+                <div class="product-card__descr">
+                  <a class="product-card__title" href="big-basket.html">Большая корзинка для игрушек</a>
+                  <span class="product-card__parameters">Диаметр 30 см, высота 30 см</span>
+                  <div class="product-card__buy">
+                    <span class="product-card__price">1 500 руб.</span>
+                    <a class="product-card__btn" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
+                  </div>
+                </div>
+                <div class="product-card__wrapper">
+                  <a class="product-card__link" href="big-basket.html"><img class="product-card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="production">
-        <div class="production__wrapper">
+        <div class="container">
+          <div class="production__wrapper">
           <h2 class="production__title">Процесс производства</h2>
           <div class="production__video">
-            <video class="video" src="#" poster="img/catalog/video.jpg" preload="none" width="260" height="150"></video>
+            <video class="video" src="#" poster="img/video-mobile@1x.jpg" preload="none" width="260" height="150"></video>
             <div class="video__controls">
-              <button class="video__toggle" type="button"></button>
+              <button class="video__toggle" type="button">Воспроизвести видео</button>
             </div>
           </div>
           <p class="production__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="btn production__order-btn" href="form.html">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social social">
+      <div class="container">
+        <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--insta" href="https://wwww.instagram.com" target="_blank">
@@ -117,34 +125,32 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+        </div>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано<span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
     <section class="add-to-cart">
-      <h2 class="add-to-cart__title">Добавить в корзину</h2>
-      <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="container">
+        <h2 class="add-to-cart__title">Добавить <br>в корзину</h2>
+        <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
         <div class="add-to-cart__form-title">Выберите размер:</div>
         <div class="add-to-cart__field-wrapper">
-          <label class="add-to-cart__radio-wrapper">
-            <input type="radio" name="add-to-cart" value="s">
+          <label class="add-to-cart__radio-wrapper add-to-cart__radio-wrapper--active">
+            <input class="visually-hidden" type="radio" name="add-to-cart" value="s">
             <span class="add-to-cart__radio-text">s</span>
           </label>
           <label class="add-to-cart__radio-wrapper">
-            <input type="radio" name="add-to-cart" value="m">
+            <input class="visually-hidden" type="radio" name="add-to-cart" value="m">
             <span class="add-to-cart__radio-text">m</span>
           </label>
           <label class="add-to-cart__radio-wrapper">
-            <input type="radio" name="add-to-cart" value="l">
+            <input class="visually-hidden" type="radio" name="add-to-cart" value="l">
             <span class="add-to-cart__radio-text">l</span>
           </label>
         </div>
-        <input class="btn add-to-cart__btn" type="submit" value="Добавить">
-      </form>
+        <input class="btn btn--green add-to-cart__btn" type="submit" value="Добавить">
+        </form>
+      </div>
     </section>
   </body>
 </html>

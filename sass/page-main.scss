@@ -1,0 +1,23 @@
+.page-main__wrapper {
+  padding-top: 75px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 74px;
+  background-color: #f1f1f1;
+}
+
+.page-main__title {
+  @include title;
+  font-size: 27px;
+  text-align: center;
+}
+
+.page-main__descr {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 29px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  font-size: 13px;
+  line-height: 24px;
+}
