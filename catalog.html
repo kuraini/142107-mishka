@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,27 +12,34 @@
         <a class="logo page-header__logo" href="index.html">
           <img class="logo__image page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="main-nav__toggle-line"></span>Открыть меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+                <a class="site-list__link site-list__link-catalog" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+                <a class="site-list__link site-list__link-form" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item site-list__item--hidden">
+                <a class="site-list__link site-list__link-new" href="new.html">Новые поступления</a>
+              </li>
+              <li class="site-list__item site-list__item--hidden">
+                <a class="site-list__link site-list__link-sale" href="sale.html">Распродажа</a>
               </li>
             </ul>
             <ul class="main-nav__list user-list">
               <li class="user-list__item">
-                <a class="user-list__link" href="search.html">Поиск по сайту</a>
+                <a class="user-list__link user-list__link-search" href="search.html"><span class="user-list__link-icon"></span>Поиск по сайту</a>
               </li>
               <li class="user-list__item">
-                <a class="user-list__link" href="cart.html">Корзина: пока пуста</a>
+                <a class="user-list__link user-list__link-cart" href="cart.html"><div class="user-list__link-icon"></div>Корзина: пока пуста</a>
               </li>
             </ul>
           </div>
         </nav>
+        <span class="page-header__delivery">Бесплатная доставка по России</span>
       </div>
     </header>
     <main class="page-main">
@@ -106,34 +114,38 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__container">
+        <a class="logo page-footer__logo"><img class="logo__image page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»"></a>
         <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--insta" href="https://wwww.instagram.com" target="_blank">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com" target="_blank">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="https://twitter.com" target="_blank">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--insta" href="https://wwww.instagram.com" target="_blank">
+                <span class="social__link-icon"></span>
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="https://www.facebook.com" target="_blank">
+                <span class="social__link-icon"></span>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--tw" href="https://twitter.com" target="_blank">
+                <span class="social__link-icon"></span>
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано<span class="visually-hidden">HTML Academy</span></a>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано<span class="visually-hidden">HTML Academy</span><span class="page-footer__copyright-icon"></span></a>
       </div>
     </footer>
     <section class="add-to-cart">
-      <div class="container">
+      <div class="add-to-cart__container">
         <h2 class="add-to-cart__title">Добавить <br>в корзину</h2>
+        <span class="add-to-cart__descr">Выберите размер:</span>
         <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="add-to-cart__form-title">Выберите размер:</div>
         <div class="add-to-cart__field-wrapper">
           <label class="add-to-cart__radio-wrapper add-to-cart__radio-wrapper--active">
             <input class="visually-hidden" type="radio" name="add-to-cart" value="s">
