@@ -1,0 +1,106 @@
+.field-username {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid $green-light;
+}
+
+.field-username__title {
+  padding-right: 20px;
+
+  @include field-title;
+}
+
+.field-username__inner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
+  padding-bottom: 16px;
+}
+
+.field-username__label {
+  display: block;
+  margin-bottom: 16px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.field-username__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.field-username__input {
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-username {
+    position: relative;
+    padding-left: 168px;
+    border: none;
+  }
+
+  .field-username__title {
+    position: absolute;
+    top: 67px;
+    left: 2px;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .field-username__inner {
+    padding-top: 66px;
+    padding-bottom: 10px;
+  }
+
+  .field-username__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .field-username__input {
+    flex-grow: 1;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 19px;
+      padding-left: 17px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .field-username__label {
+    margin-right: 26px;
+    margin-bottom: 17px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-username {
+    padding-left: 176px;
+    padding-right: 175px;
+  }
+
+  .field-username__title {
+    top: 66px;
+    left: 61px;
+  }
+}

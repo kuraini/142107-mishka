@@ -1,0 +1,78 @@
+.field-message {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid $green-light;
+}
+
+.field-message {
+  position: relative;
+  padding-top: 32px;
+}
+
+.field-message__title {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  padding-right: 23px;
+  background-color: #ffffff;
+
+  @include field-title;
+}
+
+.field-message__textarea {
+  width: 100%;
+  min-height: 142px;
+  padding: 15px;
+  border: 2px solid $gray-dark;
+  resize: none;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-message {
+    width: 768px;
+    padding-top: 50px;
+    padding-left: 168px;
+    margin-bottom: 45px;
+    border: none;
+  }
+
+  .field-message__title {
+    top: 67px;
+    left: 2px;
+  }
+
+  .field-message__textarea{
+    &::placeholder {
+      font-size: 19px;
+      line-height: 19px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-message {
+    width: 942px;
+    margin-bottom: 39px;
+    padding-left: 0;
+  }
+
+  .field-message__title {
+    top: 66px;
+    left: -113px;
+  }
+
+  .field-message__textarea {
+    padding: 12px;
+
+    &::placeholder {
+      letter-spacing: 0.04em;
+    }
+  }
+}
