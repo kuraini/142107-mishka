@@ -1,13 +1,10 @@
 .field-message {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 32px;
   border: none;
   border-top: 1px solid $green-light;
-}
-
-.field-message {
-  position: relative;
-  padding-top: 32px;
 }
 
 .field-message__title {
@@ -48,7 +45,7 @@
     left: 2px;
   }
 
-  .field-message__textarea{
+  .field-message__textarea {
     &::placeholder {
       font-size: 19px;
       line-height: 19px;
