@@ -12,7 +12,6 @@
 .production__wrapper {
   display: flex;
   flex-direction: column;
-  //padding-bottom: 32px;
   border: 1px solid $gray-medium;
 }
 
@@ -22,8 +21,11 @@
   margin-left: 34px;
   margin-bottom: 23px;
   padding-left: 56px;
-
-  @include font-link;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .production__video {

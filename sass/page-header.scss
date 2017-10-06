@@ -30,7 +30,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     border: none;
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 88px, transparent 88px, transparent 100%);
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 89px, #ececec 89px, #ececec 90px, transparent 90px, transparent 100%);
   }
 
   .page-header__container {
@@ -38,7 +38,6 @@
     flex-wrap: wrap;
     width: 768px;
     padding: 0 50px;
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 89px, #ececec 89px, #ececec 90px, transparent 90px, transparent 100%);
   }
 
   .page-header__logo {
