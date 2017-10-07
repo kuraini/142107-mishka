@@ -1,0 +1,66 @@
+.field-mail {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-bottom: 39px;
+  border: none;
+  border-top: 1px solid $green-light;
+}
+
+.field-mail__title {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  padding-right: 25px;
+  background-color: #ffffff;
+
+  @include field-title;
+}
+
+.field-mail__input {
+  width: 100%;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-mail {
+    padding-top: 21px;
+    padding-bottom: 50px;
+    padding-left: 168px;
+    border: none;
+  }
+
+  .field-mail__title {
+    top: 27px;
+    left: 3px;
+    background-color: transparent;
+  }
+
+  .field-mail__input {
+    &::placeholder {
+      font-size: 19px;
+      line-height: 19px;
+      padding-left: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-mail {
+    padding-right: 176px;
+    padding-left: 174px;
+  }
+
+  .field-mail__title {
+    left: 60px;
+  }
+}
