@@ -63,8 +63,6 @@
 
 .field-checkbox__input:focus + .field-checkbox__indicator {
   border-color: #62d1ba;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .field-checkbox__input:active + .field-checkbox__indicator {
