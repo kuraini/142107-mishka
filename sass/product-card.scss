@@ -2,7 +2,15 @@
   display: flex;
   flex-direction: column;
   width: 260px;
-  border: 1px solid $gray-medium;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product-card__descr {
@@ -10,6 +18,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 28px;
+  border: 1px solid $gray-medium;
 }
 
 .product-card__title-wrapper {
@@ -43,8 +52,11 @@
 }
 
 .product-card__buy {
-  padding-top: 18px;
-  padding-bottom: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 27px;
   border-top: 1px solid $gray-medium;
 }
 
@@ -54,6 +66,29 @@
   font-size: 15px;
   line-height: 24px;
   color: rgba(0, 0, 0, 1);
+}
+
+.product-card__btn {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.product-card__btn svg {
+  position: absolute;
+  top: 2px;
+  right: -1px;
+}
+
+.product-card__btn:hover path,
+.product-card__btn:focus path {
+  fill: $green-light;
+  fill-opacity: 1;
+}
+
+.product-card__btn:active path {
+  fill-opacity: 0.3;
 }
 
 .product-card__link {
@@ -74,15 +109,15 @@
   }
 
   .product-card__link {
-    width: 50%;
-    height: 332px;
+    width: 333px;
+    height: 334px;
     background-color: $gray-medium;
   }
 
   .product-card__descr {
     justify-content: space-between;
     flex-grow: 1;
-    width: 50%;
+    width: 335px;
   }
 
   .product-card__title {
@@ -98,6 +133,13 @@
 
   .product-card__buy {
     margin: 0 4px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+
+  .product-cars__buy svg {
+    top: 1px;
+    right: -2px;
   }
 
   .product-card__price {
@@ -116,12 +158,27 @@
     margin-bottom: 14px;
   }
 
+  .product-card__title {
+    margin-left: -1px;
+  }
+
+  .product-card__parameters {
+    margin-left: -2px;
+  }
+
   .product-card__descr {
     width: 100%;
   }
 
   .product-card__buy {
     margin: 0;
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+
+  .product-card__btn svg {
+    top: 0;
+    left: 2px;
   }
 
   .product-card__link {

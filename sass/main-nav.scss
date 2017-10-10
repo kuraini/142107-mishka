@@ -11,12 +11,21 @@
   z-index: 5;
   display: block;
   width: 20px;
-  height: 14px;
+  height: 20px;
   padding: 0;
   font-size: 0;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -24,10 +33,33 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 20px;
   height: 2px;
   background-color: #000000;
   box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 29px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 27px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__logo {
@@ -35,6 +67,22 @@
   display: block;
   padding: 21px;
   padding-bottom: 13px;
+}
+
+.main-nav__logo[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-image {
+  width: 86px;
+  height: 35px;
 }
 
 .main-nav__list {
@@ -62,12 +110,12 @@
   font-size: 17px;
   line-height: 24px;
 
-  &:hover,
-  &:focus {
+  &:hover[href],
+  &:focus[href] {
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &:active {
+  &:active[href] {
     color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -96,13 +144,48 @@
   font-size: 17px;
   line-height: 24px;
 
-  &:hover,
-  &:focus {
+  &:hover[href],
+  &:focus[href] {
     color: rgba(0, 0, 0, 0.6);
   }
 
-  &:active {
+  &:active[href] {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .main-nav--closed .main-nav__list{
+    display: none;
+  }
+
+  .main-nav--closed .user-list {
+    display: none;
+  }
+
+  .main-nav--nojs {
+    position: static;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav--nojs .user-list {
+    display: flex;
   }
 }
 
