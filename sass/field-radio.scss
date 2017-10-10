@@ -64,8 +64,6 @@
 
 .field-radio__input:focus + .field-radio__indicator {
   border-color: #62d1ba;
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .field-radio__input:active + .field-radio__indicator {
