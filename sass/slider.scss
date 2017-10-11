@@ -36,15 +36,15 @@
 
 .slider__arrow--prev {
   &::before {
-    background-image: url("../img/icon-left-arrow.svg");
+    background-image: url("../img/icon/icon-left-arrow.svg");
   }
 }
 
 .slider__arrow--next {
-  margin-left: -4px;
+  margin-left: -5px;
 
   &::before {
-    background-image: url("../img/icon-right-arrow.svg");
+    background-image: url("../img/icon/icon-right-arrow.svg");
   }
 }
 

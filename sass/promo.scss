@@ -29,6 +29,7 @@
 }
 
 .promo__link {
+  position: relative;
   display: block;
   padding-top: 25px;
   padding-right: 110px;
@@ -39,12 +40,63 @@
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
 
-  &--interior {
-    background-color: $green-light;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 63px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+}
+
+.promo__link--interior {
+  background-color: $green-light;
+
+  &::before {
+    top: 21px;
+    right: 26px;
+    background-image: url("../img/icon/icon-interior.svg");
+    background-position: center center;
   }
 
-  &--toys {
-    background-color: $green-dark;
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 0 0 $green-light;
+  }
+}
+
+.promo__link--toys {
+  background-color: $green-dark;
+
+  &::before {
+    top: 19px;
+    right: 27px;
+    background-image: url("../img/icon/icon-toy.svg");
+    background-position: center center;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 0 0 $green-dark;
+  }
+}
+
+.promo__link:hover {
+  transform: translateY(-5px);
+
+  &::before {
+    opacity: 0.7;
+  }
+}
+
+.promo__link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  &::before {
+    opacity: 0.3;
   }
 }
 
@@ -85,7 +137,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding-top: 154px;
+    padding-top: 152px;
     background-image: url("../img/hero-desktop.jpg");
   }
 
@@ -98,5 +150,18 @@
     margin-bottom: 359px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .promo__link--interior {
+    &::before {
+      top: 28px;
+    }
+  }
+
+  .promo__link--toys {
+    &::before {
+      top: 29px;
+      right: 35px;
+    }
   }
 }

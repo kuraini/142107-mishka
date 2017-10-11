@@ -1,10 +1,17 @@
 .add-to-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  display: none;
   width: 320px;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 46px;
+  background-color: #ffffff;
   border-top: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  transform: translate(-50%, -50%);
 }
 
 .add-to-cart__container {
@@ -69,6 +76,10 @@
 
 .add-to-cart__btn {
   width: 100%;
+}
+
+.add-to-cart-show {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
