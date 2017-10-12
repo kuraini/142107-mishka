@@ -1,6 +1,6 @@
 .page-footer {
   min-height: 160px;
-  padding-top: 25px;
+  padding-top: 20px;
   background-color: $gray-light;
 }
 
@@ -14,63 +14,6 @@
 
 .page-footer__logo {
   display: none;
-}
-
-.page-footer__social {
-  border-bottom: 1px solid $gray-medium;
-}
-
-.social__list {
-  @include list-reset;
-  display: flex;
-  flex-flow: row wrap;
-  margin-left: 53px;
-  margin-right: 62px;
-  margin-bottom: 29px;
-}
-
-.social__item {
-  margin-right: 30px;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-
-.social__link {
-  position: relative;
-  display: block;
-  width: 28px;
-  height: 26px;
-
-  &:hover path,
-  &:focus path {
-    fill: #46c1ae;
-  }
-
-  &:active path {
-    fill: #46c1ae;
-    fill-opacity: 0.3;
-  }
-}
-
-.social__link svg {
-  position: absolute;
-}
-
-.social__link--insta svg {
-  bottom: 0;
-  left: 4px;
-}
-
-.social__link--fb svg {
-  bottom: -1px;
-  left: 10px;
-}
-
-.social__link--tw svg {
-  bottom: 1px;
-  left: 5px;
 }
 
 .page-footer__copyright {
@@ -106,7 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 50px;
+    padding-top: 51px;
   }
 
   .page-footer__container {
@@ -119,43 +62,44 @@
 
   .page-footer__logo {
     display: block;
-    margin-right: 87px;
+    width: 102px;
+    height: 35px;
+    margin-right: 60px;
   }
 
-  .page-footer__social {
-    border: none;
+  .page-footer__logo[href]:hover path,
+  .page-footer__logo[href]:focus path {
+    fill: #46c1ae;
   }
 
-  .social__list {
-    margin: 0;
+  .page-footer__logo[href]:active {
+    opacity: 0.3;
   }
 
   .page-footer__copyright {
     margin: 0;
-    padding: 0;
+    padding-top: 13px;
     padding-right: 56px;
+    padding-bottom: 3px;
+    padding-left: 0;
   }
 
   .page-footer__copyright-icon {
-    top: -5px;
+    top: 7px;
     right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 48px;
+    padding-top: 50px;
   }
 
   .page-footer__container {
     width: 1150px;
   }
 
-  .page-foter__logo {
-    margin-right: 89px;
-  }
-
-  .page-footer__social {
-    margin-top: 4px;
+  .page-footer__logo {
+    margin-left: 1px;
   }
 }

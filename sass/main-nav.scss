@@ -202,7 +202,14 @@
   .main-nav__logo {
     order: 1;
     flex-grow: 1;
+    width: 113px;
+    height: 47px;
     padding: 0;
+  }
+
+  .main-nav__logo-image {
+    width: 113px;
+    height: 47px;
   }
 
   .main-nav__list {
@@ -231,7 +238,14 @@
 @media (min-width: $desktop-width) {
   .main-nav__logo {
     order: 2;
-    text-align: center;
+    width: 149px;
+    height: 73px;
+    margin-left: 73px;
+  }
+
+  .main-nav__logo-image {
+    width: 149px;
+    height: 73px;
   }
 
   .main-nav__list {

@@ -43,21 +43,3 @@ input[type="radio"].visually-hidden {
   border: 0;
   white-space: nowrap;
 }
-
-.container {
-  width: 320px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  display: none;
-  background-color: #ffffff;
-  opacity: 0.9;
-}

@@ -1,0 +1,50 @@
+.video {
+  position: relative;
+  width: 260px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.video__toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 102px;
+  height: 78px;
+  margin-top: -40px;
+  margin-left: -51px;
+  background-color: transparent;
+  background-image: url("../img/icon/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 0;
+    background-color: $gray-medium;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 682px;
+  }
+}
