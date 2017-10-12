@@ -1,7 +1,7 @@
 @import "normalize";
 @import "fonts";
-@import "variables";
-@import "mixins";
+@import "_variables";
+@import "_mixins";
 @import "global";
 @import "btn";
 @import "page-header";
@@ -15,9 +15,11 @@
 @import "reviews";
 @import "slider";
 @import "contacts";
+@import "map";
 @import "catalog";
 @import "product-card";
 @import "production";
+@import "video";
 @import "form";
 @import "field-radio";
 @import "field-checkbox";
@@ -26,4 +28,6 @@
 @import "field-mail";
 @import "field-message";
 @import "page-footer";
+@import "social";
 @import "add-to-cart";
+@import "overlay";
