@@ -25,12 +25,12 @@
   width: 40px;
   height: 40px;
 
-  &:hover svg,
+  &:hover .social__icon,
   &:focus svg {
     fill: #46c1ae;
   }
 
-  &:active svg {
+  &:active .social__icon {
     fill: #46c1ae;
     fill-opacity: 0.3;
   }
@@ -38,7 +38,7 @@
 
 .social__icon {
   position: absolute;
-  fill: #231F20;
+  fill: #231f20;
 }
 
 .social__link--insta svg {
