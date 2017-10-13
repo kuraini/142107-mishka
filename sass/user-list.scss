@@ -32,8 +32,19 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
+  &:hover svg,
+  &:focus svg {
+    fill: $green-light;
+    fill-opacity: 1;
+  }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active svg {
+    fill: $green-light;
+    fill-opacity: 0.3;
   }
 }
 
@@ -44,6 +55,8 @@
   display: block;
   width: 18px;
   height: 18px;
+  fill: #231F20;
+  fill-opacity: 0.2;
 }
 
 .user-list__cart-icon {
@@ -53,20 +66,8 @@
   display: block;
   width: 21px;
   height: 19px;
-}
-
-.user-list__search-link:hover path,
-.user-list__search-link:focus path,
-.user-list__cart-link:hover path,
-.user-list__cart-link:focus path {
-  fill: $green-light;
-  fill-opacity: 1;
-}
-
-.user-list__search-link:active path,
-.user-list__cart-link:active path {
-  fill: $green-light;
-  fill-opacity: 0.3;
+  fill: #231F20;
+  fill-opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {

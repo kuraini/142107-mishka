@@ -13,27 +13,28 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-ymaps.ready(init);
+var modal = document.querySelector(".add-to-cart");
+var overlay = document.querySelector(".overlay");
+var button = document.querySelector(".product__btn");
 
-function init() {
-  var myMap = new ymaps.Map("map", {
-    center: [59.93863106417265,30.3230545],
-    zoom: 17,
-    controls: []
-  });
+button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  overlay.classList.add("overlay--show");
+  modal.classList.add("add-to-cart--show");
+});
 
-  var myPlacemark = new ymaps.Placemark([59.93863106417265,30.3230545],
-  {
-    hintContent: "Наш офис"
-  },
-  {
-    iconLayout: "default#image",
-    iconImageHref: "img/icon/icon-map-pin.svg",
-    iconImageSize: [66, 101],
-    iconImageOffset: [-25, -85]
-  });
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (modal.classList.contains("add-to-cart--show")) {
+      modal.classList.remove("add-to-cart--show");
+      overlay.classList.remove("overlay--show");
+    }
+  }
+});
 
-  myMap.geoObjects.add(myPlacemark);
-  myMap.controls.add("zoomControl");
-  myMap.behaviors.disable("scrollZoom");
-}
+overlay.addEventListener("click", function (evt) {
+  if (modal.classList.contains("add-to-cart--show")) {
+    modal.classList.remove("add-to-cart--show");
+    overlay.classList.remove("overlay--show");
+  }
+});
