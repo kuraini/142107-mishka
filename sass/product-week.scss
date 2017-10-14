@@ -13,6 +13,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat;
     background-size: 320px;
+    transform: rotate(180deg);
   }
 }
 
@@ -31,7 +32,7 @@
       top: 50px;
       width: 768px;
       height: 17px;
-      background-size: 768px;
+      background-size: 768px 17px;
     }
   }
 
@@ -43,11 +44,11 @@
 
 @media (min-width: $desktop-width) {
   .product-week {
-    padding-top: 51px;
+    padding-top: 46px;
     padding-bottom: 74px;
 
     &::after {
-      top: 75px;
+      top: 72px;
       width: 1050px;
       height: 23px;
       background-size: 1050px;

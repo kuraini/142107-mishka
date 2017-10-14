@@ -73,22 +73,24 @@
   display: block;
   width: 25px;
   height: 25px;
+
+  &:hover .product-card__icon,
+  &:focus .product-card__icon {
+    fill: $green-light;
+    fill-opacity: 1;
+  }
+
+  &:active .product-card__icon {
+    fill-opacity: 0.3;
+  }
 }
 
-.product-card__btn svg {
+.product-card__icon {
   position: absolute;
   top: 2px;
   right: -1px;
-}
-
-.product-card__btn:hover path,
-.product-card__btn:focus path {
-  fill: $green-light;
-  fill-opacity: 1;
-}
-
-.product-card__btn:active path {
-  fill-opacity: 0.3;
+  fill: #231f20;
+  fill-opacity: 0.2;
 }
 
 .product-card__link {

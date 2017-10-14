@@ -123,6 +123,7 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: 768px 28px;
+      transform: translateX(6px);
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -196,8 +197,8 @@
     line-height: 57px;
   }
 
-  .promo-link {
-    padding-bottom: 49px;
+  .promo__link {
+    padding-bottom: 48px;
   }
 
   .promo__link--interior {

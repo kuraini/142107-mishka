@@ -36,10 +36,11 @@
   top: 22px;
   width: 27px;
   height: 35px;
+  fill: #63d1bb;
 }
 
-.page-footer__copyright:hover path,
-.page-footer__copyright:focus path {
+.page-footer__copyright:hover svg,
+.page-footer__copyright:focus svg {
   fill: #46c1ae;
 }
 
@@ -67,8 +68,8 @@
     margin-right: 60px;
   }
 
-  .page-footer__logo[href]:hover path,
-  .page-footer__logo[href]:focus path {
+  .page-footer__logo[href]:hover svg,
+  .page-footer__logo[href]:focus svg {
     fill: #46c1ae;
   }
 
@@ -92,7 +93,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 50px;
+    padding-top: 49px;
   }
 
   .page-footer__container {

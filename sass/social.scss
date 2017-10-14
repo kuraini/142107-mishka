@@ -25,19 +25,20 @@
   width: 40px;
   height: 40px;
 
-  &:hover path,
-  &:focus path {
+  &:hover .social__icon,
+  &:focus svg {
     fill: #46c1ae;
   }
 
-  &:active path {
+  &:active .social__icon {
     fill: #46c1ae;
     fill-opacity: 0.3;
   }
 }
 
-.social__link svg {
+.social__icon {
   position: absolute;
+  fill: #231f20;
 }
 
 .social__link--insta svg {
@@ -85,5 +86,18 @@
 @media (min-width: $desktop-width) {
   .social {
     margin-top: 4px;
+  }
+
+  .social__link--insta svg {
+    bottom: 9px;
+    right: 1px;
+  }
+
+  .social__link--fb svg {
+    bottom: 8px;
+  }
+
+  .social__link--tw svg {
+    bottom: 10px;
   }
 }
