@@ -86,6 +86,9 @@
               </table>
               <div class="product__img-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
                   <img class="product__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
@@ -148,6 +151,9 @@
           </div>
           <div class="contacts__map map">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
               <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Адрес компании по адресу ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
@@ -191,21 +197,21 @@
         <h2 class="add-to-cart__title">Добавить в&nbsp;корзину</h2>
         <span class="add-to-cart__descr">Выберите размер:</span>
         <form class="add-to-cart__form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="add-to-cart__field-wrapper">
-          <label class="add-to-cart__radio-wrapper add-to-cart__radio-wrapper--active">
-            <input class="visually-hidden" type="radio" name="add-to-cart" value="s" checked>
-            <span class="add-to-cart__radio-text">s</span>
-          </label>
-          <label class="add-to-cart__radio-wrapper">
-            <input class="visually-hidden" type="radio" name="add-to-cart" value="m">
-            <span class="add-to-cart__radio-text">m</span>
-          </label>
-          <label class="add-to-cart__radio-wrapper">
-            <input class="visually-hidden" type="radio" name="add-to-cart" value="l">
-            <span class="add-to-cart__radio-text">l</span>
-          </label>
-        </div>
-        <input class="btn btn--green add-to-cart__btn" type="submit" value="Добавить">
+          <div class="add-to-cart__field-wrapper">
+            <label class="add-to-cart__radio-wrapper add-to-cart__radio-wrapper--active">
+              <input class="visually-hidden" type="radio" name="add-to-cart" value="s" checked>
+              <span class="add-to-cart__radio-text">s</span>
+            </label>
+            <label class="add-to-cart__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="add-to-cart" value="m">
+              <span class="add-to-cart__radio-text">m</span>
+            </label>
+            <label class="add-to-cart__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="add-to-cart" value="l">
+              <span class="add-to-cart__radio-text">l</span>
+            </label>
+          </div>
+          <input class="btn btn--green add-to-cart__btn" type="submit" value="Добавить">
         </form>
       </div>
     </section>
