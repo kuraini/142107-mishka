@@ -29,8 +29,8 @@
 
 .product-card__title {
   display: block;
-  margin-top: 27px;
-  margin-bottom: 3px;
+  padding-top: 27px;
+  padding-bottom: 3px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -97,6 +97,7 @@
   display: block;
   width: 260px;
   height: 195px;
+  background-color: #ececec;
 }
 
 @media (min-width: $tablet-width) {
@@ -119,8 +120,8 @@
   }
 
   .product-card__title {
-    margin-top: 25px;
-    margin-bottom: 5px;
+    padding-top: 25px;
+    padding-bottom: 5px;
     font-size: 20px;
     line-height: 24px;
   }

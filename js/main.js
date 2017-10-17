@@ -15,13 +15,30 @@ navToggle.addEventListener("click", function() {
 
 var modal = document.querySelector(".add-to-cart");
 var overlay = document.querySelector(".overlay");
-var button = document.querySelector(".product__btn");
+var button;
 
-button.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  overlay.classList.add("overlay--show");
-  modal.classList.add("add-to-cart--show");
-});
+if (document.querySelector(".product__btn")) {
+  button = document.querySelector(".product__btn");
+
+  button.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    overlay.classList.add("overlay--show");
+    modal.classList.add("add-to-cart--show");
+  });
+
+} else {
+  var buttons = document.querySelectorAll(".product-card__btn");
+  var i;
+
+  for (i = 0; i < buttons.length; ++i) {
+    buttons[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      overlay.classList.add("overlay--show");
+      modal.classList.add("add-to-cart--show");
+    });
+  };
+
+};
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -38,3 +55,28 @@ overlay.addEventListener("click", function (evt) {
     overlay.classList.remove("overlay--show");
   }
 });
+
+ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [59.93863106417265,30.3230545],
+    zoom: 17,
+    controls: []
+  });
+
+  var myPlacemark = new ymaps.Placemark([59.93863106417265,30.3230545],
+  {
+    hintContent: "Наш офис"
+  },
+  {
+    iconLayout: "default#image",
+    iconImageHref: "img/icon/icon-map-pin.svg",
+    iconImageSize: [66, 101],
+    iconImageOffset: [-25, -85]
+  });
+
+  myMap.geoObjects.add(myPlacemark);
+  myMap.controls.add("zoomControl");
+  myMap.behaviors.disable("scrollZoom");
+}
