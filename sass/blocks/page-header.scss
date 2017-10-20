@@ -14,18 +14,9 @@
   margin: 0 auto;
 }
 
-.page-header__delivery {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     border: none;
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 89px, #e7e7e7 89px, #e7e7e7 89px, #fafafa 90px, #fafafa 100%);
-
-    &--inner {
-      background: linear-gradient(to bottom, #ffffff 0, #ffffff 89px, #dfdfdf 89px, #dfdfdf 89px, #f1f1f1 90px, #f1f1f1 100%);
-    }
   }
 
   .page-header__container {
@@ -33,13 +24,6 @@
     flex-wrap: wrap;
     width: 768px;
     padding: 0 50px;
-  }
-
-  .page-header__delivery {
-    position: absolute;
-    top: 103px;
-    right: 50px;
-    display: block;
   }
 }
 
