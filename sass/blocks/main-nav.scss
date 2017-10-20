@@ -154,6 +154,10 @@
   }
 }
 
+.main-nav__delivery {
+  display: none;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav {
     position: absolute;
@@ -232,6 +236,13 @@
   .main-nav__link {
     padding: 17px 0;
     font-size: 15px;
+  }
+
+  .main-nav__delivery {
+    order: 4;
+    align-self: center;
+    display: block;
+    margin-left: auto;
   }
 }
 

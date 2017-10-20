@@ -108,9 +108,10 @@
 @media (min-width: $tablet-width) {
   .promo {
     position: relative;
-    padding-top: 153px;
+    padding-top: 152px;
     background-image: url("../img/decor/hero-tablet@1x.jpg");
     background-position: center 0;
+    border-top: 1px solid #e7e7e7;
 
     &::after {
       content: "";
@@ -172,7 +173,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding-top: 154px;
+    padding-top: 153px;
     background-image: url("../img/decor/hero-desktop@1x.jpg");
 
     &::after {
